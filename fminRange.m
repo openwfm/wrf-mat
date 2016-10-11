@@ -18,6 +18,10 @@ fmLatTL  = u.lat(1);
 fmLatTR  = u.lat(size(u.lat,1),1);
 fmLatBL  = u.lat(1, size(u.lat,2));
 fmLatBR  = u.lat(length(u.long));
+fprintf('top left    : %10.6f %10.6f\n',fmLonTL,fmLatTL)
+fprintf('top right   : %10.6f %10.6f\n',fmLonTR,fmLatTR)
+fprintf('bottom left : %10.6f %10.6f\n',fmLonBL,fmLatBL)
+fprintf('bottom right: %10.6f %10.6f\n',fmLonBR,fmLatBR)
 
 fmLonTLinRange = fmLonTL > lonlat(1) && fmLonTL < lonlat(2);
 fmLonTRinRange = fmLonTR > lonlat(1) && fmLonTR < lonlat(2);
